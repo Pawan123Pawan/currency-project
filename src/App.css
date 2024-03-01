@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* background: #8884d8; */
+}
+.main-container {
+  width: 100vw;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.navbar {
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-heading {
+  text-align: center;
+}
+.rightdiv {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.inputdiv {
+}
+.inputdiv > input {
+  border: none;
+  font-size: 16px;
+  border: 1px solid #8884d8;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.inputdiv > input:focus {
+  outline: none;
+}
+.mybutton {
+  padding: 10px 20px;
+  background: #8884d8;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.mybutton:hover {
+  opacity: 0.8;
+}
+
+.tablediv {
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+}
+.insidetable {
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+}
+
+.chart {
+  margin-top: 50px;
+}
+
+/* modal css */
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 350px;
+  border: 2px solid #8884d8;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-name {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.modal-name span {
+  font-weight: bold;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.modal-name span:last-child {
+  font-weight: normal;
+}
+
+.cacelModal {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  color: red;
+}
+.cacelModal:hover {
+  color: #8884d8;
+}
+
+@media only screen and (max-width: 790px) {
+    .container{
+        width: 95%;
+    }
+}
